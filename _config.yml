@@ -1,3 +1,21 @@
-theme: jekyll-theme-minimal
-title: Skyler Ruiter's Homepage
-description: Github pages for me to show off my resume, projects, blog, and post notes.
+# Jekyll configuration
+
+author: Skyler Ruiter
+
+name: Skyler Ruiter
+description: Undergraduate Resercher at GVSU
+
+permalink: /:year/:month/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
+
+exclude: ['README.md', 'LICENSE']
+
+social:
+  github: skyler-ruiter
+  stackoverflow: '12929017/skyler-ruiter'
+  linkedin: 'skylerruiter'
+  instagram: 'skylerruiter'
