@@ -4,7 +4,7 @@ title: "Thoughts on SuiteSparse"
 date: 2023-05-23 15:48:00
 description: My first research project is using this to benchmark and so I read up on the paper and thought I'd share my thoughts!
 tags:
- - research papers
+ - papers
 ---
 
 This is hopefully the first of many research papers I plan on reading and taking notes on. I'm doing this for a few reasons:

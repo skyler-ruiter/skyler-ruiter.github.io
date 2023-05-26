@@ -5,10 +5,10 @@ date: 2023-05-19 16:20:00
 description: This is my first post for me to test out how this all works!
 tags:
  - code
- - graduate school
+ - school
  - productivity
  - random
- - research papers
+ - papers
 ---
 
 ### Hello World!
