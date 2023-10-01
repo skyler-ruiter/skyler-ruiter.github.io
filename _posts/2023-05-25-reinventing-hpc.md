@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thoughts on Reinventing HPC"
+title: "Reinventing HPC (Reed et al.) (2022)"
 date: 2023-05-25 15:10:00
 description: I'd be lying if I said I had a strong grasp on the landscape of HPC considering how new I am to looking into it. This paper seemed like a great place to start getting a handle on how the world of HPC has grown and changed over time and where it might be going in the future!
 tags:

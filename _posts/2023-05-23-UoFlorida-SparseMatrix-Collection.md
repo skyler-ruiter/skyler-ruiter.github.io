@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thoughts on SuiteSparse"
+title: "SuiteSparse UF Collection (Tim Davis) (2011)"
 date: 2023-05-23 15:48:00
 description: My first research project is using this to benchmark and so I read up on the paper and thought I'd share my thoughts!
 tags:
