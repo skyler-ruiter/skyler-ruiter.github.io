@@ -37,6 +37,22 @@ title: About
   <div class="caption-container">
     <p id="caption"></p>
   </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/assets/images/skyler_pics/tech_week_23.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/images/skyler_pics/professional_1.jpeg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/images/skyler_pics/professional_2.jpeg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/images/skyler_pics/trails_1.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+  </div>
 </div> 
 
 ## About Me
