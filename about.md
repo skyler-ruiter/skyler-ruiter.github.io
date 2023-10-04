@@ -18,7 +18,7 @@ I had not even considered research as an option going into my junior year of col
 
 This website is a tool to help me learn and grow. One of the primary goals is for me to just have a space to write about academic topics and compare with others to help me improve my writing skills. I also use this website as a general landing point for my professional work as I want to show off my projects and skills on this website where I can. One of the ways in which I add to this website is by reading papers in computing and putting down my thoughts and questions about the paper. This is a way for me to gain a stronger backgroud in computing, help me get better at reading academic papers, and to start building a potential relationship with the authors I admire. 
 
-<img src="/assets/images/skyler_pics/professional_1.jpeg">
+<img src="/assets/images/skyler_pics/professional_1.jpeg"> <img src="/assets/images/skyler_pics/undergrad_fair.JPG">
 
 ## About My Work
 
