@@ -13,7 +13,7 @@ ___
 
 ## **The Paper**
 
-[Reinventing High Performance Computing: Challeneges and Opportunities](https://arxiv.org/pdf/2203.02544.pdf)
+[Reinventing High Performance Computing: Challeneges and Opportunities](https://arxiv.org/pdf/2203.02544.pdf){:target="_blank"}  
 
 ## **Notes**
 

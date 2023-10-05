@@ -18,9 +18,9 @@ ___
 
 ## **The Paper**
 
-[The University of Florida Sparse Matrix Collection Paper](https://dl.acm.org/doi/10.1145/2049662.2049663)
+[The University of Florida Sparse Matrix Collection Paper](https://dl.acm.org/doi/10.1145/2049662.2049663){:target="_blank"}  
 
-[The Suite Sparse Matrix Collection Website](https://sparse.tamu.edu/)
+[The Suite Sparse Matrix Collection Website](https://sparse.tamu.edu/){:target="_blank"}  
 
 ## **Notes**
 
