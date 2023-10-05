@@ -23,7 +23,7 @@ I had not even considered research as an option going into my junior year of col
 
 <figure>
   <img src="/assets/images/skyler_pics/tech_week_23.jpg">
-  <figcaption>*Grand Rapids Tech Week: Engineering and Computing Showcase 2023*</figcaption>
+  <figcaption><i>Grand Rapids Tech Week: Engineering and Computing Showcase 2023</i></figcaption>
 </figure>
 
 ## About This Site
@@ -32,7 +32,7 @@ This website is a tool to help me learn and grow. One of the primary goals is fo
 
 <figure>
   <img src="/assets/images/skyler_pics/professional_1.jpeg">
-  <figcaption>*Tanglefoot Park. Spring Lake, MI*</figcaption>
+  <figcaption><i>Tanglefoot Park. Spring Lake, MI</i></figcaption>
 </figure>
 
 ## About My Work
@@ -46,7 +46,7 @@ The project I'm currently working on is Probabilistic Modeling of Genomics Data 
 
 <figure>
   <img src="/assets/images/skyler_pics/undergrad_fair.JPG">
-  <figcaption>*GVSU Undergraudate Research Fair 2023*</figcaption>
+  <figcaption><i>GVSU Undergraudate Research Fair 2023</i></figcaption>
 </figure>
 
 ### Research Interests
