@@ -4,6 +4,17 @@ title: About
 
 ---
 
+
+### Table of Contents
+1. [About Me](#about-me)
+2. [About This Site](#about-this-site)
+3. [About My Work](#about-my-work)
+  3.1 [Projects](#projects)
+  3.2 [Research Interests](#research-interests)
+  3.3 [My Mentors at GVSU](#my-mentors-at-gvsu)
+4. [CV](#cv)
+
+
 ## About Me
 
 I am a senior at Grand Valley State University studying computer science with a minor in mathematics and employed as an undergraduate researcher for the Applied Computing Institute. Currently, I am researching methods and programs to facilitate biomedical research through data compression and machine learning. I’m also the president of the Computing Club of GVSU, leading dozens of students in gaining technical and interpersonal skills for the world of computing. When I’m not working on research, school, or club, I enjoy spending time with friends and family, playing soccer, reading, and mixing drinks.
@@ -29,6 +40,8 @@ My first project for the ACI and first research project ever is the creation of 
 
 My second project has recently started and has included a number of more people to the project, growing to a team of around 5 students. The new project is Probabilistic Modeling of Genomics Data with Variational Autoencoders (VAE). I don't fully understand the scope of the project at present since it is still in the early stages of development but I will update this section as we progress. The goal or motivating example is to try and predict risk based on a persons genome and the drug doctors wish to prescribe to try and aim for an educated guess instead of a blind guess when traditional methods fail. The domains this project encompasses are high performance computing (HPC), deep learning, and bioinformatics.
 
+<img src="/assets/images/skyler_pics/undergrad_fair.JPG">
+
 **Research Interests:**
 My academic and research interests are continually refined as I continue my education, but I am deeply invested in high-performance computing (HPC) and interdisciplinary research involving HPC. The field of HPC has many qualities that I value and find interesting, making it a pillar of my research interests. Firstly, I love to optimize; understanding a codebase or even a single section of code to find ways to optimize the code for specific applications brings me much enjoyment. The ability to leverage tradeoffs in an algorithm or method to glean some way to optimize further is a skill I want to gain a more intuitive understanding of as I grow as a researcher. An example of this is approximate computing, finding where an algorithm can be less precise but improve performance while still being a highly reliable algorithm. This paints a larger picture of my desire to push computing and algorithmic boundaries in the realm of HPC.
 
@@ -45,5 +58,3 @@ Lastly, I have gained a few interests due to the nature of my research projects,
 
 <!-- embed the pdf in assets/images/ here -->
 <embed src="/assets/images/CV_Fall23.pdf" width="100%" height="1000px" type="application/pdf">
-
-<img src="/assets/images/skyler_pics/undergrad_fair.JPG">
