@@ -18,7 +18,7 @@ I am a researcher in the field of high performance computing with a focus on dat
 
 The FZ Project is a lossy error-bound lossy compression framework funded by the NSF. These compressors see use in many fields such as AI, quantum simulation, scientific computing, and instrumentation.
 
-I am currently working on the development team of the IU FZ Team under the advisement of Dr. Fengguang Song. Thus far I've worked on profiling the performance of the cuSZ family of compressors and analyzing the perofrmance of key kernels on different Nvidia GPUs. Going forward I will be working on developing further high performance compression kernels for the FZ team that are performance portable across different architectures using the Kokkos library.
+I am currently working on the development team of the IU FZ Team under the advisement of Dr. Fengguang Song. Thus far I've worked on profiling the performance of the cuSZ family of compressors and analyzing the perofrmance of key kernels on different Nvidia GPUs. Going forward I will be working on developing further high performance compression kernels for the FZ team and building up a GPU module library of high-performance data-reduction kernels for increased efficiency in finding optimal GPU based compression pipelines. 
 
 [**cuSZ Github**](https://github.com/szcompressor/cuSZ){:target="_blank"}
 
@@ -55,6 +55,12 @@ The IVSparse Library is a C++ sparse matrix library optimized for the compressio
 ## Talks and Pictures
 
 ---
+
+<figure>
+  <img src="/assets/images/sarasota_group_picture.png" style="width: 100%;">
+  <figcaption><i>FZ ZF Joint Workshop at Sarasota FL. I'm pictured top right.</i></figcaption>
+</figure>
+
 <figure>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Szl82L0Nlho" frameborder="0" allowfullscreen></iframe>
   <figcaption><i>GVSU Computing Seminar Series IVSparse Talk</i></figcaption>
