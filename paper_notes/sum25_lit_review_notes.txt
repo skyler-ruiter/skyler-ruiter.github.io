@@ -1,0 +1,40 @@
+
+General Notes:
+
+- look into error propogation for lossy iterative solvers
+  - can lossy compression be used to reduce the number of iterations?
+  - does error propogation matter much?
+  - is there a way to do error correction for better convergence?
+  - what research is there in lossy iterative solvers?
+
+- sparse iterative solvers are especially interesting:
+  - they are difficult to parallelize and have low computational intensity
+  - SpMV is a common kernel in these solvers (BICGSTAB, GMRES, etc.)
+  - 
+
+- can we compress data during the time it takes for a memory operation: free cycles usually wasted
+  - see FRSZ2 paper for more details
+  - can we use lossy compression to reduce the amount of data that needs to be transfered?
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- seems for SpMV testing SuiteSparse is still the go to for scientific datasets
+  - graph datasets seem to often be not considered (graph specific algorithms)
+
+- cuSPARSE seems to be a go-to for testing against for SOTA SpMV kernels
+
+- seen GPU based SpMV kernels based on more load balancing than compression:
+  - compressed sparse block (CSB) format
+  - CSR-I (irregular) format (2017) which adds better load balancing and memory access
+  - C-COO (compressed COO) format (2021) which better load balances and compresses on the side COO format
+  - the relationship between compression and speed is interesting
+    - load balancing and memory access seem more important than raw compression ratio
+    - seems the data is compressed usually before being sent to GPU (or as soon as its transfered)
+      - not much compression done mid-algorithm / at runtime
+
+- seems like anzt and co have mostly covered work in creating gpu optimized load balanced and compressed extensions of COO and CSR/CSC and the use of mixed precision values / LUT for the SpMV kernel
+  - they have started to extend to more architectures and CPU based kernels
+
+- 

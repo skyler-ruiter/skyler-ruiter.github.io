@@ -1,0 +1,14 @@
+#### Compression and load balancing for efficient sparse matrix-vector product on 
+  multicore processors and graphics processing units ####
+
+- Authors:
+  - Jose I. Aliaga, Hartwig Anzt, Thomas Grutzmacher, Enrique S. Quintana-Ortí, Andres E. Tomas
+- Year: 2022
+
+~~~ Notes ~~~
+
+- extends the C-COO format they worked on last year to CPU and Intel/AMD GPUs
+  - still compares against cuSPARSE and MKL on suiteSparse matrices
+  - extends the format a bit to to use 2-13 bytes per value entry
+
+- 

@@ -1,0 +1,48 @@
+#### A Survey of Numerical Methods Utilizing Mixed Precision Arithmetic ####
+
+- Authors: 
+  - Hartwig Anzt, jack dongarra, etc.
+  - ECP Multiprecision Effort Team (Lead: Hartwig Anzt)
+- Year: 2020
+
+~~~ Notes ~~~
+
+= Section 3: Data and communication compression for multiprecision algorithms
+
+- Section 3.1: Data Conversions
+  - there are existing fast conversions between float and double in LAPACK
+- Section 3.2: Data Compression
+  - F64 -> F32 is lossy compression losing 8 decimal digits but CR is 2x
+  - iterative refinement from [24,4,3] can use F32 casting to 4x speedup
+    some F64 solvers in MAGMA
+  - also used ZFP compression for lossy Compression
+    - set to 4x CR for ZFP, essentially size of F16 with F32 accuracy
+    - which can accelerate FFT up to 4x
+- Section 3.2.1: Mixed-precision MPI
+  - compression/mixed precision can acclerate MPI communication
+  - using ZFP can also reduce communication time but not as much as F16
+    - does still do 2x losing 8 digits, data sending is 4x faster but only
+      2x after compression and decompression
+- Section 3.3: Approximate Fast Fourier Transforms
+  - when running multidimensiona FFTs on distributed gpu system (eg. 43 GPUs)
+    99% of the time is spent in MPI communication so speedup here is basically
+    total speedup
+  - they developed heFFTe library
+  - by utilizing fused compression + packing mpi calls there can be 4x speedup
+    using F16
+  - ~~~ current work on overlapping use of GPUs for comp/decomp with MPI communications ~~~
+    - possible due to being very memory bound
+  - there is a level of accuracy control to leverage
+    - mixed precision can be better than pure low precision
+    - can even tune mixed to be equivilent to F64
+  - otherwise can split the data dynamically in half (leverage tensor cores)
+
+= Section 4: Multiprecision Sparse Factorizations
+
+- direct methods for sparse systems can benefit from lower precision formats:
+  - perform expensive calculations in low precision and have a cheap fixup
+    algorithm to recover the accuracy in a higher precision
+  - 2 research directions: the factorization themselves and in the context of direct solvers
+
+- Section 4.1: Multiprecision sparse LU/QR
+  - 

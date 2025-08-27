@@ -1,0 +1,56 @@
+#### Balanced and Compressed Coordinate Layout for the Sparse Matrix-Vector Product on GPUs ####
+
+- Authors: 
+  - Jose Ignacio Aliaga, Hartwig Anzt, Enrique S. Quintana-Ortí, Andres E. Tomas, Yuhsiang M. Tsai
+- Year: 2021
+
+~~~ Notes ~~~
+
+- this work focuses on a COO format instead of CSR but builds on the 2017 CSR-I work (C-COO)
+
+- similar to compressed sparse block (CSB) format 
+  - but instead is based on COO
+  - instead distribtutes by nonzero value
+  - still uses offsets
+  - uses a lookahead table to compress numerical (index) data
+
+- COO and CSR can be optimized using CUDA to have better load balancing and memory access
+  - CSR can use an approach similar to a prefix-sum to have fast accumulation of values for y
+
+- compression:
+  - seems they essentially do a CSB format but where blocks are given to the gpu as chunks 
+    to be operated on by a team of threads in the same way
+  - forces alignment of memory with padded zeros in blocks/rows that need into
+  - stores blocks as encoded values casted to better fitting types
+  - uses a lookup table for the 256 most frequent values
+    - if all values in chunk are in table only one byte per element is needed
+  - compression format is as follows for each chunk:
+    - BLOB (Binary Large OBject)
+      - row indices (minus row offset) -- i
+      - column indices (minus column offset) -- j
+      - values (potentially in LUT) -- a
+    - row offset
+    - column offset
+    - LUT (256 values and not per chunk i believe)
+
+- experimental setup: 
+  - uses suitesparse again
+  - dimensions > 900k
+  - excludes graph application matrices (better graph specific algorithms)
+  - v100 GPU (16GB) and A100 GPU (40GB)
+
+- Compressed COO memory overhead:
+  - almost always better than regular COO
+  - usually better than CSR (sometimes by a lot)
+  - better redundancy can lead to really good compression
+
+- SpMV performance:
+  - with compressed coo they get better GFLOPS than cuSPARSE CSR and COO
+  - generally by 1.2-1.5x
+
+- Effect on BICGSTAB:
+  - used a set number of iterations for comparison
+  - generally 1.2-1.4x faster using compressed COO
+  - performance gain is relative to the proportion of the algorthm that is SpMV
+
+- format is highly extendable for specific applications (such as binary, graph, redundnant, etc)

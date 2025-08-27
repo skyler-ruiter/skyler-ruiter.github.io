@@ -1,0 +1,49 @@
+#### Balanced CSR Sparse Matrix-Vector Product on Graphics Processors ####
+
+- Authors:
+  - Goran Flegar (google as a senior software engineer in germany)
+  - Enrique S. Quintana-Ortí (University of Valencia)
+
+- Year: 2017
+
+~~~ Notes ~~~
+
+- compares against cuSPARSE HYB, SELL-P, ELL, and ELLR-T (and CSR)
+
+- Many formats and spmv kernels are meant for specific types of data
+  with specific sparse distributions. this paper proposes a more general
+  conjuction format for data with regular and irregular sparsity patterns.
+  
+- still uses sparse matrix collection (SMC)
+
+- Uses a number of GPU techniques to improve performance:
+  - divides CSR into segments for load balancing
+    - segments are aligned and accessed in a coalesced manner by warps
+    - warps can handle multiple rows
+  - uses local accumulation to reduce atomic operation overhead
+    - warp shuffle into single atomic update to global memory
+  - warp vote to determine if next row is being processed
+  - to determine first row of a segment:
+    - while A is transfered to GPU calculate "srow" (segment row) 
+      and attach to CSR format (small overhead comptuation)
+
+
+- experimental setup:
+  - does 1000 replications and takes average
+  - doesnt account for some flops if the operate on zero entries
+  - HYB not open source -- had to use cudaGetMemInfo
+  - used only a subset of the matrices in the SMC
+  - ELLPACK and ELLR-T are not general enough to be used
+
+- memory consumption:
+  - srow is negligible generally
+  - HYB isnt too much more memory either
+  - SELL-P is poor in some cases and ELL is awful at worst case (11TB+)
+
+- main focus is on comparing against CSR for regular and irregular sparsity
+  - CSR is not the best for irregular sparsity patterns
+  - CSR-I is better for irregular sparsity patterns
+
+  - therefore the optimal format is a hybrid of CSR and CSR-I
+    - this is only possible because CSR-I is a small modification of CSR
+    - can find a-priori the best format with simple statstical test
