@@ -14,11 +14,22 @@ I am a researcher in the field of high performance computing with a focus on dat
 
 ---
 
-### **FZ** *(Recently Joined Researcher)*
+### **FZ**
 
 The FZ Project is a lossy error-bound lossy compression framework funded by the NSF. These compressors see use in many fields such as AI, quantum simulation, scientific computing, and instrumentation.
 
-I am currently working on the development team of the IU FZ Team under the advisement of Dr. Fengguang Song. Thus far I've worked on profiling the performance of the cuSZ family of compressors and analyzing the perofrmance of key kernels on different Nvidia GPUs. Going forward I will be working on developing further high performance compression kernels for the FZ team and building up a GPU module library of high-performance data-reduction kernels for increased efficiency in finding optimal GPU based compression pipelines. 
+I am currently working on the development team of the IU FZ Team under the advisement of Dr. Fengguang Song. Thus far I've developed the FZModules library, a modular framework for constructing bespoke lossy compression pipelines. FZModules is designed for use by domain scientists and compression researchers to develop compression pipelines for specific applications.
+
+[**FZModules Github**](https://github.com/szcompressor/FZModules){:target="_blank"}
+
+[**FZModules Publication**](https://arxiv.org/abs/2509.20563){:target="_blank"}
+
+<div style="width: 75%; margin: auto;">
+  <figure>
+    <img src="/assets/images/rate-distortion.PNG" style="width: 100%;">
+    <figcaption><i>Rate distortion curves for different compression pipelines highlighted in the paper.</i></figcaption>
+  </figure>
+</div>
 
 [**cuSZ Github**](https://github.com/szcompressor/cuSZ){:target="_blank"}
 
@@ -49,12 +60,29 @@ The IVSparse Library is a C++ sparse matrix library optimized for the compressio
 
 ---
 
+- **[SC Workshops '25 (DRBSD)]** **Skyler Ruiter**, Jiannan Tian, Fengguang Song. "FZModules: A Heterogenous Computing Framework for Customizable Data Compression Pipelines." *2025 IEEE/ACM The 11th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD)*. St Louis, MO, USA. November 16-21. [arxiv](https://arxiv.org/abs/2509.20563)
+
 - **[BigData '24]** Seth Wolfgang, **Skyler Ruiter**, Marc Tunnell, Timothy Triche Jr, Erin Carrier, Zachary DeBruine. "Value-Compressed Sparse Column (VCSC): Sparse Matrix Storage for Single-cell Omics Data." *2024 IEEE International Conference on Big Data (BigData)*. Washington, DC, USA. December 15-18. [arxiv](https://arxiv.org/abs/2309.04355)
 
 
 ## Talks and Pictures
 
 ---
+
+<figure>
+  <img src="/assets/images/dongarra_pic_sc25.jpg" style="width: 100%;">
+  <figcaption><i>SC25 Photo. Seth Wolfgang (left), Jack Dongarra (middle), Me (right).</i></figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/VT_Fall25_ZF_FZ_Group_Photo.png" style="width: 100%;">
+  <figcaption><i>FZ ZF Joint Workshop at Washington DC. I'm pictured back middle left.</i></figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/song_research_group.jpg" style="width: 100%;">
+  <figcaption><i>Dr. Song's research group out for dinner.</i></figcaption>
+</figure>
 
 <figure>
   <img src="/assets/images/sarasota_group_picture.png" style="width: 100%;">
