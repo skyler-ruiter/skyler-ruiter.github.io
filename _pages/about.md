@@ -35,5 +35,5 @@ I received my B.S. in Computer Science from Grand Valley State University, where
 
 My current projects include [**FZGPUModules**](https://github.com/szcompressor/FZGPUModules), a modular heterogeneous computing framework for customizable graph-composable compression pipelines, and [**IVSparse**](https://github.com/Seth-Wolfgang/IVSparse), a C++ sparse matrix library optimized for highly redundant sparse data such as genomic data.
 
-Outside of research I enjoy games, caving, hiking, cooking, and mixology.
+Outside of research I enjoy games, caving, hiking, cooking, and mixology. Also my Erdős number is 5.
 
