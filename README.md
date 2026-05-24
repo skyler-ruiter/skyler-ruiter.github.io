@@ -4,13 +4,13 @@ Personal website for Skyler Ruiter, built with [Jekyll](https://jekyllrb.com/) u
 
 ## Local Development
 
-Requires [Docker](https://www.docker.com/).
+Requires [Docker](https://www.docker.com/). Technically not impossible to avoid using Docker, but it's likely not worth it.
 
 ```bash
 docker compose pull && docker compose up
 ```
 
-Site runs at `http://localhost:8080`. Rebuild after changing dependencies:
+Site runs at `http://localhost:4000`. Rebuild after changing dependencies:
 
 ```bash
 docker compose up --build
