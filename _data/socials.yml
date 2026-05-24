@@ -1,0 +1,11 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/CV_May26.pdf # path to your CV PDF file
+email: sruiter@iu.edu # your email address
+github_username: skyler-ruiter
+linkedin_username: skylerruiter
+scholar_userid: U1EQDU4AAAAJ # your Google Scholar ID
+stackoverflow_id: 12929017
+instagram_id: skylerruiter
+youtube_id: Skylake0106

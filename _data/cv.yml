@@ -1,0 +1,98 @@
+cv:
+  name: Skyler Ruiter
+  label: PhD Student
+  email: sruiter@iu.edu
+  location: Bloomington, IN
+  image: ""
+  summary: PhD student in Intelligent Systems Engineering at Indiana University Bloomington, working on high-performance computing, data compression, and sparse matrix storage.
+
+  social_networks:
+    - network: GitHub
+      username: skyler-ruiter
+    - network: LinkedIn
+      username: skylerruiter
+
+  sections:
+    Education:
+      - institution: Indiana University Bloomington
+        location: Bloomington, IN
+        url: https://luddy.indiana.edu/
+        area: Intelligent Systems Engineering
+        studyType: PhD
+        start_date: 2024
+        end_date: present
+        highlights:
+          - "Advisor: Dr. Fengguang Song"
+          - "FZ Compression Researcher"
+
+      - institution: Grand Valley State University
+        location: Allendale, MI
+        url: https://www.gvsu.edu/
+        area: Computer Science
+        studyType: B.S.
+        start_date: 2020
+        end_date: 2024
+        highlights:
+          - "Research: Sparse matrix compression for single-cell omics data"
+          - "Mentors: Dr. Zachary DeBruine, Dr. Erin Carrier"
+
+    Experience:
+      - company: Indiana University — FZ Compression Project
+        position: Graduate Research Assistant
+        location: Bloomington, IN
+        start_date: 2024
+        end_date: present
+        highlights:
+          - "Developed FZGPUModules, a modular heterogeneous framework for customizable graph-composable compression pipelines for analytical workflows"
+          - "Contributed to the IU FZ team compressor development targeting CPU and GPU architectures"
+
+      - company: Sandia National Laboratories
+        position: Research Intern
+        location: Albuquerque, NM
+        start_date: 2023-05  # TODO: confirm exact months
+        end_date: 2023-08
+        highlights:
+          - "Worked on the E3SM atmospheric model (HOMME — High-Order Method Modeling Environment)"
+          - "Gained experience with large-scale scientific computing and performance optimization"
+
+      - company: Grand Valley State University — Applied Computing Institute
+        position: Undergraduate Research Assistant
+        location: Allendale, MI
+        start_date: 2021  # TODO: confirm
+        end_date: 2023
+        highlights:
+          - "Developed IVSparse library: novel sparse matrix formats (VCSC, IVCSC) for highly redundant data"
+          - "Presented at IEEE BigData '24, Data Compression Conference '24, Grand Rapids Tech Week '24"
+
+    Publications:
+      - title: "FZModules: A Heterogeneous Computing Framework for Customizable Data Compression Pipelines"
+        authors:
+          - Skyler Ruiter
+          - Jiannan Tian
+          - Fengguang Song
+        publisher: "SC Workshops '25 (DRBSD-11)"
+        releaseDate: 2025-11-16
+        url: https://arxiv.org/abs/2509.20563
+
+      - title: "Value-Compressed Sparse Column (VCSC): Sparse Matrix Storage for Single-cell Omics Data"
+        authors:
+          - Seth Wolfgang
+          - Skyler Ruiter
+          - Marc Tunnell
+          - Timothy Triche Jr.
+          - Erin Carrier
+          - Zachary DeBruine
+        publisher: "IEEE International Conference on Big Data (BigData '24)"
+        releaseDate: 2024-12-15
+        url: https://arxiv.org/abs/2309.04355
+
+    Skills:
+      - name: Programming
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "C/C++, CUDA, Python, CMake, Bash, Spack, Rust, PyTorch, NCCL, OpenMP, MPI, Kokkos, CUDASTF"
+
+      - name: Research Areas
+        level: ""
+        icon: fa-solid fa-microscope
+        keywords: "HPC, Data Compression, Sparse Matrices, GPU Computing, Scientific Computing"

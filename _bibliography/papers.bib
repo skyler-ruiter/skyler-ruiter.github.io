@@ -1,0 +1,32 @@
+---
+---
+
+@inproceedings{ruiter2025fzmodules,
+  abbr        = {SC Wksp},
+  bibtex_show = {true},
+  title       = {FZModules: A Heterogeneous Computing Framework for Customizable Data Compression Pipelines},
+  author      = {Ruiter, Skyler and Tian, Jiannan and Song, Fengguang},
+  booktitle   = {Proceedings of the 11th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-11), held in conjunction with SC'25},
+  year        = {2025},
+  month       = {November},
+  address     = {St. Louis, MO, USA},
+  doi         = {10.1145/3731599.3767376},
+  arxiv       = {2509.20563},
+  selected    = {true},
+  abstract    = {Modern scientific simulations and instruments generate data volumes that overwhelm memory and storage, throttling scalability. Lossy compression mitigates this by trading controlled error for reduced footprint and throughput gains, yet optimal pipelines are highly data and objective specific, demanding compression expertise. GPU compressors supply raw throughput but often hard-code fused kernels that hinder rapid experimentation, and underperform in rate-distortion. We present FZModules, a heterogeneous framework for assembling error-bounded custom compression pipelines from high-performance modules through a concise extensible interface. We further utilize an asynchronous task-backed execution library that infers data dependencies, manages memory movement, and exposes branch and stage level concurrency for powerful asynchronous compression pipelines. Evaluating three pipelines built with FZModules on four representative scientific datasets, we show they can compare end-to-end speedup of fused-kernel GPU compressors while achieving similar rate-distortion to higher fidelity CPU or hybrid compressors, enabling rapid, domain-tailored design.}
+}
+
+@inproceedings{wolfgang2024vcsc,
+  abbr        = {BigData},
+  bibtex_show = {true},
+  title       = {Value-Compressed Sparse Column (VCSC): Sparse Matrix Storage for Single-cell Omics Data},
+  author      = {Wolfgang, Seth and Ruiter, Skyler and Tunnell, Marc and Triche Jr., Timothy and Carrier, Erin and DeBruine, Zachary},
+  booktitle   = {2024 IEEE International Conference on Big Data (BigData)},
+  year        = {2024},
+  month       = {December},
+  address     = {Washington, DC, USA},
+  doi         = {10.1109/BigData62323.2024.10825091},
+  arxiv       = {2309.04355},
+  selected    = {true},
+  abstract    = {Genomics datasets, such as single-cell transcriptomics, are often very large and highly sparse, posing significant challenges for both storage and computation. As the scale of data generation accelerates, efficiently compressing these datasets becomes crucial. Current compression methods, like the popular Compressed Sparse Column (CSC) format, capitalize only on sparsity but overlook other properties like redundancy, which can offer additional opportunities for compression. Genomics data, especially single-cell assays, often exhibit high redundancy within columns, making traditional sparse formats inefficient for in-core computation. In this paper, we present two extensions to CSC: (1) Value-Compressed Sparse Column (VCSC) and (2) Index- and Value-Compressed Sparse Column (IVCSC). VCSC takes advantage of high redundancy within a column to further compress data up 1.9-fold over CSC on real data, without significant negative impact to performance characteristics. IVCSC extends VCSC by compressing index arrays through delta encoding and byte-packing, achieving up to a 4.4-fold decrease in memory usage over CSC on real data. Our benchmarks show that VCSC and IVCSC can be used in compressed form with little added computational cost. These formats represent a step forward in balancing the growing demands of data storage and processing in the era of large-scale genomics.}
+}
